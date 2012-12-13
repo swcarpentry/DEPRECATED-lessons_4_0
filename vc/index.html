@@ -1,0 +1,34 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Version Control" />
+  <meta name="subfile" content="intro.html" />
+  <meta name="subfile" content="basic.html" />
+  <meta name="subfile" content="conflict.html" />
+  <meta name="subfile" content="rollback.html" />
+  <meta name="subfile" content="commandline.html" />
+  <meta name="subfile" content="setup.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Correlation does not imply causality,
+      but there is a very strong correlation between
+      using version control
+      and doing good computational science.
+      (There's an even stronger correlation
+      between <em>not</em> using it and wasting effort.)
+      Good record keeping is essential to good science;
+      without the kind of record-keeping that version control provides,
+      there's no way to know exactly who did what, when.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>Version control is a reliable way to share files between machines.</li>
+      <li>It also allows people to work simultaneously by tracking and managing conflicts.</li>
+      <li>And keeps a permanent history of what state programs, data, and documents were in at various times.</li>
+    </ul>
+  </div>
+{% endblock introduction %}

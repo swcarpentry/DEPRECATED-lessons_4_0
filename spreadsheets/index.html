@@ -1,0 +1,35 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Spreadsheets" />
+  <meta name="subfile" content="intro.html" />
+  <meta name="subfile" content="aggregation.html" />
+  <meta name="subfile" content="display.html" />
+  <meta name="subfile" content="sorting.html" />
+  <meta name="subfile" content="conditionals.html" />
+  <meta name="subfile" content="lookup.html" />
+  <meta name="subfile" content="charting.html" />
+  <meta name="subfile" content="pivot.html" />
+  <meta name="subfile" content="named.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Many scientists use spreadsheets to store and analyze small data sets&mdash;which is fine,
+      except (a) they keep using them long after they should have outgrown them,
+      and (b) even on small data sets, many scientists do things by hand
+      because they don't know about their spreadsheet's more advanced features.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>Ensure the data is regular along both columns and rows.</li>
+      <li>Use aggregation functions to combine values, and ranges to define which values to combine.</li>
+      <li>Use built-in sorting and ranking functions to manage data.</li>
+      <li>Use conditional and lookup functions to achieve the same effect as <code>if</code> and <code>for</code>.</li>
+      <li>Use pivot tables to aggregate data along multiple dimensions.</li>
+      <li>Named ranges make updates safer and easier.</li>
+    </ul>
+  </div>
+{% endblock introduction %}

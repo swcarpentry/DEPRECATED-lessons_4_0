@@ -1,0 +1,42 @@
+<!-- pageclass: TopicPage -->
+{% extends "_base.html" %}
+
+{% block pagetitle %}<title>Software Carpentry: {{page.parent.title}} / {{page.title}}</title>{% endblock pagetitle %}
+
+{% block javascript %}
+<script type="text/javascript">
+  $(function() {
+    transform_slides();
+  });
+</script>
+{% endblock javascript %}
+
+{% block navhighlight %}{{navhighlight('lessons')}}{% endblock navhighlight %}
+
+{% block title %}
+<div class="title">
+  <ul class="pager">
+    {{nav_left()}}
+    {{nav_right()}}
+  </ul>
+  <h1><a class="topic_link" href="index.html">{{page.parent.title}}</a>: {{page.title}}</h1>
+</div>
+{% endblock title %}
+
+{% block files %}
+  <div class="files">
+    {% if page.odp or page.pdf %}
+      {% if page.odp %}
+        <a href="{{page.odp}}">slides</a>
+      {% endif %}
+      {% if page.pdf %}
+        <a href="{{page.pdf}}">PDF</a>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endblock files %}
+
+<!-- Actual content provided by topic page. -->
+{% block content %}
+  <p>No content provided.</p>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Make" />
+  <meta name="subfile" content="intro.html" />
+  <meta name="subfile" content="basics.html" />
+  <meta name="subfile" content="patterns.html" />
+  <meta name="subfile" content="rules.html" />
+  <meta name="subfile" content="macros.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Originally invented to manage compilation of programs written in languages like C,
+      Make can be used to automatically update any set of files
+      that depend on another set of files.
+      This makes it a good solution for many data analysis and data management problems.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>A Makefile describes how files depend on each other, and how to update out-of-date files.</li>
+      <li>Use patterns, rules, and variables to eliminate redundancy.</li>
+      <li>Use macros to control operation.</li>
+    </ul>
+  </div>
+{% endblock introduction %}

@@ -1,0 +1,27 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Multimedia Programming" />
+  <meta name="subfile" content="image.html" />
+  <meta name="subfile" content="stars.html" />
+  <meta name="subfile" content="imageops.html" />
+  <meta name="subfile" content="steg.html" />
+  <meta name="subfile" content="audio.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Numbers are easy to represent as text,
+      but much of the data scientists now work with is more naturally stored as images, audio, or video.
+      All of these formats have more internal structure than plain text,
+      and are associated with specialized operations and algorithms for manipulating them.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>Images may be stored in many different formats, but are normally represented in memory as rectangular patches of pixels.</li>
+      <li>Media formats are either lossy or lossless.</li>
+    </ul>
+  </div>
+{% endblock introduction %}

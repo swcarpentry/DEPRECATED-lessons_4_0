@@ -1,0 +1,27 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Systems Programming" />
+  <meta name="subfile" content="filedir.html" />
+  <meta name="subfile" content="dirwalk.html" />
+  <meta name="subfile" content="queries.html" />
+  <meta name="subfile" content="filepaths.html" />
+  <meta name="subfile" content="filemgmt.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Once programmers start to manipulate files and directories in more sophisticated ways,
+      there comes a point when it makes sense to stop using shell scripts
+      and start doing it with programming languages that have
+      more sophisticated control constructs and data structures.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>Programs can open and read directories to find out what files those directories contain.</li>
+      <li>They can work recursively on the contents of nested directories by walking the directory tree.</li>
+    </ul>
+  </div>
+{% endblock introduction %}

@@ -1,0 +1,42 @@
+{% extends "_lesson.html" %}
+
+{% block file_metadata %}
+  <meta name="title" content="Program Design" />
+  <meta name="subfile" content="intro.html" />
+  <meta name="subfile" content="grid.html" />
+  <meta name="subfile" content="aliasing.html" />
+  <meta name="subfile" content="random.html" />
+  <meta name="subfile" content="neighbors.html" />
+  <meta name="subfile" content="ties.html" />
+  <meta name="subfile" content="assembly.html" />
+  <meta name="subfile" content="bugs.html" />
+  <meta name="subfile" content="refactoring.html" />
+  <meta name="subfile" content="test.html" />
+  <meta name="subfile" content="tuning.html" />
+{% endblock file_metadata %}
+
+{% block introduction %}
+  <div class="overview">
+    <p>
+      Well-structured programs are easier to optimize than poorly-structured ones.
+      If we grow a program as a collection of functions,
+      refactoring along the way,
+      we will be able to change those functions more or less independently of one another
+      to try out new ideas.
+      As is almost always the case,
+      improving the quality of our work improves our performance:
+      it is the opposite of an either/or tradeoff.
+      In addition,
+      choosing the right algorithms and data structures often yields bigger speedups
+      than switching to parallel hardware,
+      so we should always look there first for performance gains.
+    </p>
+  </div>
+  <div class="well well-small">
+    <ul class="keypoints">
+      <li>Build programs top-down: write as if the mini-language you wanted already existed, them go back and fill in the missing pieces.</li>
+      <li>Modular programs are easier to test and refactor than ones with many dependencies between components.</li>
+      <li>Careful choice of algorithms and data structures often produces bigger performance improvements than parallel hardware possibly could.</li>
+    </ul>
+  </div>
+{% endblock introduction %}
