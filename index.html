@@ -1,5 +1,4 @@
 {% extends "_base.html" %}
-
 {% block file_metadata %}
   <meta name="title" content="Lessons (Version 4.0)" />
   <meta name="subfile" content="vc/index.html" />
@@ -22,37 +21,29 @@
   <meta name="subfile" content="softeng/index.html" />
   <meta name="subfile" content="essays/index.html" />
 {% endblock file_metadata %}
-
 {% block navhighlight %}{{navhighlight('lessons')}}{% endblock navhighlight %}
-
 {% block content %}
 
   <div align="center">
     <img src="{{root_path}}/img/bootcamps/2012-11-scripps.png" alt="Boot Camp at the Scripps Institute, 2012" />
   </div>
 
-  <div class="toc">
-    <h3>Contents</h3>
-    <ul>
-      {% for lesson in page.children %}
-        <li><a href="#{{lesson.slug}}">{{lesson.title}}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+  <h2>Contents</h2>
 
-  <p>Material from <a href="{{root_path}}/3_0/index.html">Version 3</a> is also available.</p>
-
+  <table class="table table-striped">
   {% for lesson in page.children %}
-    <div id="{{lesson.slug}}">
-      <h3><a href="{{lesson.original}}">{{lesson.title}}</a></h3>
-      {% if lesson.keypoints %}
+    <tr>
+      <td><a href="{{lesson.original}}">{{lesson.title}}</a></td>
+      <td>
         <ul>
           {{lesson.keypoints|safe}}
         </ul>
-      {% endif %}
-    </div>
+      </td>
+    </tr>
   {% endfor %}
+  </table>
+
+  <p>Material from <a href="{{root_path}}/3_0/index.html">Version 3</a> is also available.</p>
 
 {% endblock content %}
-
 {% block comments %}{% endblock comments %}
